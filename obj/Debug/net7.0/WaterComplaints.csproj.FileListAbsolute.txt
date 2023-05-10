@@ -1,0 +1,15 @@
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\bin\Debug\net7.0\WaterComplaints.exe
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\bin\Debug\net7.0\WaterComplaints.deps.json
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\bin\Debug\net7.0\WaterComplaints.runtimeconfig.json
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\bin\Debug\net7.0\WaterComplaints.dll
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\bin\Debug\net7.0\WaterComplaints.pdb
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\obj\Debug\net7.0\WaterComplaints.csproj.AssemblyReference.cache
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\obj\Debug\net7.0\WaterComplaints.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\obj\Debug\net7.0\WaterComplaints.AssemblyInfoInputs.cache
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\obj\Debug\net7.0\WaterComplaints.AssemblyInfo.cs
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\obj\Debug\net7.0\WaterComplaints.csproj.CoreCompileInputs.cache
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\obj\Debug\net7.0\WaterComplaints.dll
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\obj\Debug\net7.0\refint\WaterComplaints.dll
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\obj\Debug\net7.0\WaterComplaints.pdb
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\obj\Debug\net7.0\WaterComplaints.genruntimeconfig.cache
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\obj\Debug\net7.0\ref\WaterComplaints.dll

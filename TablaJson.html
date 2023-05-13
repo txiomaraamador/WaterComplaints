@@ -41,29 +41,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script>
-          fetch('./datos.json')
-              .then( response => response.json() )
-              .catch( error => console.log(error) )
-              .then( data => mostrarData(data) )
-              
-          const mostrarData = (data) => {
-              console.log(data)
-              let body = ""
-              for (var i = 0; i < data.length; i++) {      
-                 body+=`<tr><td>${data[i].location}</td>
-                    <td>${data[i].reportDate}</td>
-                    <td>${data[i].leakTime}</td>
-                    <td>${data[i].reporterName}</td>
-                    <td>${data[i].description}</td>
-                    <td>${data[i].georeferencedLocation}</td>
-                    <td>${data[i].severity}</td>
-                    <td>${data[i].phoneNumber}</td>
-                    <td>${data[i].email}</td>
-                    <td>${data[i].age}</td></tr>`
-              }
-              document.getElementById('data').innerHTML = body
-              //console.log(body)
-          }
+           // Obtener los datos del archivo JSON
+      fetch('datos.json')
+        .then(response => response.json())
+        .then(data => {
+          // Crear una fila por cada objeto en el arreglo de datos
+          const filas = data.map(({ location, reportDate, leakTime, reporterName, description, georeferencedLocation, severity, phoneNumber, email, age }) => {
+            return `
+              <tr>
+                <td>${location}</td>
+                <td>${reportDate}</td>
+                <td>${leakTime}</td>
+                <td>${reporterName}</td>
+                <td>${description}</td>
+                <td>${georeferencedLocation}</td>
+                <td>${severity}</td>
+                <td>${phoneNumber}</td>
+                <td>${email}</td>
+                <td>${age}</td>
+              </tr>
+            `;
+          });
+          
+          // Insertar las filas en la tabla
+          document.querySelector('tbody').innerHTML = filas.join('');
+        })
+        .catch(error => console.error(error));
       </script>
   </body>
 </html>

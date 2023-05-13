@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\xioma\\OneDrive\\Escritorio\\TALLER\\WaterComplaints\\WaterComplaints.csproj": {}
+    "c:\\Users\\VladAgui\\Documents\\Proyectos\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj": {}
   },
   "projects": {
-    "C:\\Users\\xioma\\OneDrive\\Escritorio\\TALLER\\WaterComplaints\\WaterComplaints.csproj": {
+    "c:\\Users\\VladAgui\\Documents\\Proyectos\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xioma\\OneDrive\\Escritorio\\TALLER\\WaterComplaints\\WaterComplaints.csproj",
+        "projectUniqueName": "c:\\Users\\VladAgui\\Documents\\Proyectos\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj",
         "projectName": "WaterComplaints",
-        "projectPath": "C:\\Users\\xioma\\OneDrive\\Escritorio\\TALLER\\WaterComplaints\\WaterComplaints.csproj",
-        "packagesPath": "C:\\Users\\xioma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xioma\\OneDrive\\Escritorio\\TALLER\\WaterComplaints\\obj\\",
+        "projectPath": "c:\\Users\\VladAgui\\Documents\\Proyectos\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj",
+        "packagesPath": "C:\\Users\\VladAgui\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\VladAgui\\Documents\\Proyectos\\WaterComplaints\\WaterComplaints\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\xioma\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\VladAgui\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,36 @@
+[{
+  "location": "Zacatecas",
+  "reportDate": "2022-12-12T00:00:00",
+  "leakTime": "12:20:20",
+  "reporterName": "Lizeth",
+  "description": "Tub",
+  "georeferencedLocation": "ccccc",
+  "severity": 9,
+  "phoneNumber": "4331112440",
+  "email": "lizeth@gmail.com",
+  "age": 22
+},
+{
+  "location": "Sombrerete",
+  "reportDate": "2023-05-12T00:00:00",
+  "leakTime": "00:10:00",
+  "reporterName": "Xiomara",
+  "description": "Tuberias",
+  "georeferencedLocation": "xxxxxx",
+  "severity": 10,
+  "phoneNumber": "4331131492",
+  "email": "xiomara@gmail.com",
+  "age": 20
+},
+{
+  "location": "Sombrerte",
+  "reportDate": "2023-05-12T00:00:00",
+  "leakTime": "00:20:00",
+  "reporterName": "Osiel",
+  "description": "Tub",
+  "georeferencedLocation": "ddddddd",
+  "severity": 5,
+  "phoneNumber": "4331211123",
+  "email": "osiel@gmail.com",
+  "age": 22
+}]

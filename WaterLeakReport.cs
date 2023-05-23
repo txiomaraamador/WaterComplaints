@@ -18,37 +18,37 @@ public class WaterLeakReport
 
     public void CollectData(){
 
-        Console.WriteLine("Por favor ingrese la localización de la fuga:");
+        Console.WriteLine("Localización de la fuga:");
         string location = Console.ReadLine();
 
-        Console.WriteLine("Por favor ingrese la fecha del reporte (en formato dd/mm/yyyy):");
+        Console.WriteLine("Fecha del reporte (en formato dd/mm/yyyy):");
         DateTime reportDate = DateTime.Parse(Console.ReadLine());
 
-        Console.WriteLine("Por favor ingrese el tiempo que tiene la fuga (en formato hh:mm:ss):");
+        Console.WriteLine("Tiempo que tiene la fuga (en formato hh:mm:ss):");
         TimeSpan leakTime = TimeSpan.Parse(Console.ReadLine());
 
-        Console.WriteLine("Por favor ingrese el nombre del reportador:");
+        Console.WriteLine("Nombre del reportador:");
         string reporterName = Console.ReadLine();
 
-        Console.WriteLine("Por favor ingrese la descripción de la fuga:");
+        Console.WriteLine("Descripción de la fuga:");
         string description = Console.ReadLine();
 
-        Console.WriteLine("Por favor ingrese la localización georeferenciada:");
+        Console.WriteLine("Localización georeferenciada:");
         string georeferencedLocation = Console.ReadLine();
 
-        Console.WriteLine("Por favor ingrese la gravedad de la fuga (en una escala del 1 al 10):");
+        Console.WriteLine("Gravedad de la fuga (en una escala del 1 al 10):");
         int severity = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Por favor ingrese la hora del reporte (en formato hh:mm:ss):");
+        Console.WriteLine("Hora del reporte (en formato hh:mm:ss):");
         TimeSpan reportTime = TimeSpan.Parse(Console.ReadLine());
 
-        Console.WriteLine("Por favor ingrese el número de teléfono de contacto:");
+        Console.WriteLine("Número de teléfono de contacto:");
         string phoneNumber = Console.ReadLine();
 
-        Console.WriteLine("Por favor ingrese el correo electrónico de contacto:");
+        Console.WriteLine("Correo electrónico de contacto:");
         string email = Console.ReadLine();
 
-        Console.WriteLine("Por favor ingrese la edad del reportador:");
+        Console.WriteLine("Edad del reportador:");
         int age = int.Parse(Console.ReadLine());
 
         var datos = new

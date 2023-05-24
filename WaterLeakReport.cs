@@ -22,10 +22,22 @@ public class WaterLeakReport
         string location = Console.ReadLine();
 
         Console.WriteLine("Fecha del reporte (en formato dd/mm/yyyy):");
-        DateTime reportDate = DateTime.Parse(Console.ReadLine());
+        string userInput = Console.ReadLine();
+        DateTime reportDate;
+        //En esta comparación se compara la fecha itroduciada con el formato de variable "DateTime" para que lo guarde como fecha en lugar de String. 
+        if (DateTime.TryParseExact(userInput, "dd/MM/yy", null, System.Globalization.DateTimeStyles.None, out reportDate))
+        {
+            //No se ejecuta nada en el If y continuará preguntando por datos
+        }
+        else
+        {
+            //No seguirá y termina el programa
+            Console.WriteLine("Error con la fecha, favor de verificarla (El formato debe de ser dd/mm/aa)");
+            return;
+        }
 
-        Console.WriteLine("Tiempo que tiene la fuga (en formato hh:mm:ss):");
-        TimeSpan leakTime = TimeSpan.Parse(Console.ReadLine());
+        Console.WriteLine("Por favor ingrese el tiempo que tiene la fuga:");
+        string leakTime = Console.ReadLine(); //Date Time o TimeSpan no fueron utilizados para concordar con datos menos específicos 
 
         Console.WriteLine("Nombre del reportador:");
         string reporterName = Console.ReadLine();

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Pu2PuLhetRAvcVcAKwywGTMqiuUys/S8PklwSSjbb38Yi0mph7pFH0IzpTHvx/OOiw0fzV8597Xqdrf9yGs1Ww==",
+  "dgSpecHash": "U6iMb+TEtHGKXOMIEYJjx5z8+9S3eJJ+RrZGYB+v09/3JNrip8ZDynO0jGW1ju2/RncaxNY9d8f3z6vY3fVV8g==",
   "success": true,
-  "projectFilePath": "c:\\Users\\VladAgui\\Documents\\Proyectos\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj",
+  "projectFilePath": "D:\\Users\\vladagui2001\\code\\Projecto1\\WaterComplaints\\WaterComplaints.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\VladAgui\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "D:\\Users\\vladagui2001\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

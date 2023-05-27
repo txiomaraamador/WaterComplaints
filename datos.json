@@ -33,4 +33,17 @@
   "phoneNumber": "4331211123",
   "email": "osiel@gmail.com",
   "age": 22
-}]
+},
+{
+  "location": "La bonita #123",
+  "reportDate": "2023-05-24T00:00:00",
+  "leakTime": "2 horas con 30 minutos",
+  "reporterName": "Vlad Enrique Aguiluz",
+  "description": "Manguera rota y el agua no ha parado de tirarse",
+  "georeferencedLocation": "48.87373649724122, 2.2954639195323967",
+  "severity": 8,
+  "phoneNumber": "4331087989",
+  "email": "vlad.aguiluz5c\u001bq@gmail.com",
+  "age": 21
+}
+]

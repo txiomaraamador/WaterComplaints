@@ -1,4 +1,4 @@
-{ 
+{
   "version": 3,
   "targets": {
     "net7.0": {
@@ -55,19 +55,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\VladAgui\\.nuget\\packages\\": {}
+    "D:\\Users\\vladagui2001\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VladAgui\\Documents\\Proyectos\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj",
+      "projectUniqueName": "D:\\Users\\vladagui2001\\code\\Projecto1\\WaterComplaints\\WaterComplaints.csproj",
       "projectName": "WaterComplaints",
-      "projectPath": "C:\\Users\\VladAgui\\Documents\\Proyectos\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj",
-      "packagesPath": "C:\\Users\\VladAgui\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VladAgui\\Documents\\Proyectos\\WaterComplaints\\WaterComplaints\\obj\\",
+      "projectPath": "D:\\Users\\vladagui2001\\code\\Projecto1\\WaterComplaints\\WaterComplaints.csproj",
+      "packagesPath": "D:\\Users\\vladagui2001\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\vladagui2001\\code\\Projecto1\\WaterComplaints\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\VladAgui\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "D:\\Users\\vladagui2001\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"

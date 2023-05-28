@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\vladagui2001\\code\\Projecto1\\WaterComplaints\\WaterComplaints.csproj": {}
+    "C:\\Users\\xioma\\OneDrive\\Escritorio\\TALLER\\WaterComplaints\\WaterComplaints.csproj": {}
   },
   "projects": {
-    "D:\\Users\\vladagui2001\\code\\Projecto1\\WaterComplaints\\WaterComplaints.csproj": {
+    "C:\\Users\\xioma\\OneDrive\\Escritorio\\TALLER\\WaterComplaints\\WaterComplaints.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\vladagui2001\\code\\Projecto1\\WaterComplaints\\WaterComplaints.csproj",
+        "projectUniqueName": "C:\\Users\\xioma\\OneDrive\\Escritorio\\TALLER\\WaterComplaints\\WaterComplaints.csproj",
         "projectName": "WaterComplaints",
-        "projectPath": "D:\\Users\\vladagui2001\\code\\Projecto1\\WaterComplaints\\WaterComplaints.csproj",
-        "packagesPath": "D:\\Users\\vladagui2001\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\vladagui2001\\code\\Projecto1\\WaterComplaints\\obj\\",
+        "projectPath": "C:\\Users\\xioma\\OneDrive\\Escritorio\\TALLER\\WaterComplaints\\WaterComplaints.csproj",
+        "packagesPath": "C:\\Users\\xioma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\xioma\\OneDrive\\Escritorio\\TALLER\\WaterComplaints\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "D:\\Users\\vladagui2001\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\xioma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

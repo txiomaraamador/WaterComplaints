@@ -8,6 +8,12 @@ public class WaterLeakDataProcessor
     {
         string jsonData = JsonConvert.SerializeObject(data, Formatting.Indented);
 
+        // Generar un nuevo ID único para el registro
+        string folio = Guid.NewGuid().ToString();
+
+        // Agregar el ID al objeto JSON
+        jsonData = jsonData.Insert(1, $@"""id"": ""{folio}"", ");
+
         Console.WriteLine("Datos en formato JSON:");
         Console.WriteLine(jsonData);
 

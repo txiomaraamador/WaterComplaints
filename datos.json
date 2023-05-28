@@ -45,30 +45,16 @@
   "phoneNumber": "4331087989",
   "email": "vlad.aguiluz5c\u001bq@gmail.com",
   "age": 21
-}
-,{
-  "Location": "Juan Aladama",
-  "ReportDate": "2023-05-28T00:00:00",
-  "LeakTime": "01:00:00",
-  "ReporterName": "Lucero Aguilera",
-  "Description": "Tuberias",
-  "GeoreferencedLocation": "xxxxxxxxxxxxxxx",
-  "Severity": 9,
-  "ReportTime": "01:20:00",
-  "PhoneNumber": "4331112440",
-  "Email": "luceroaguilera@gmail.com",
-  "Age": 30
-}
-,{
+},{
   "Location": "Durango",
   "ReportDate": "2023-05-28T00:00:00",
-  "LeakTime": "01:20:00",
+  "LeakTime": "00:50:00",
   "ReporterName": "Everardo Amador",
   "Description": "Tuberias",
-  "GeoreferencedLocation": "xxxxxxxxxxxx",
-  "Severity": 10,
-  "ReportTime": "01:22:00",
-  "PhoneNumber": "4331132525",
+  "GeoreferencedLocation": "xxxxxxxxxx",
+  "Severity": 8,
+  "ReportTime": "02:16:00",
+  "PhoneNumber": "4331131493",
   "Email": "everardoamador@gmail.com",
   "Age": 30
 }

@@ -1,0 +1,33 @@
+Proyecto de reportes de fugas de agua.
+1. Usuario reporteador de fallas. Reporteador.  (cualquier persona residente o visitante que quiera levantar un reporte).
+2. Usuario de agua y drenaje que atiende la falla. Cuadrilla. 
+3. Administrador de sistema.  
+As a WHO, I want WHAT so that WHY.
+Como reporteador, yo quiero poder hacer un reporte de una fuga, porque es la principal funcion del proyecto. 
+    - Como reporteador, yo quiero poder hacer un reporte con los siguientes datos.
+            1. Localizacion de la fuga. 
+            2. Fecha del reporte.  
+            3. Fotos de la fuga. 
+            4. Tiempo que tiene la fuga. 
+            5. Nombre de quien reporta.
+            6. Descripcion de la fuga. 
+            7. Localizacion georeferenciada. 
+            8. Gravedad (escala de que tan grave es la fuga).
+            9. Hora del reporte.
+            10. Telefono de contacto.
+            11. Correo electronico. 
+            12. Edad. 
+    - Como reporteador, yo quiero poder llevar un seguimiento de mi reporte. 
+          Quisiera poder consultar el estatus de mi reporte mediante un folio proporcionado al dar de alta el reporte.
+    
+Como Cuadrilla.
+    - Yo quisiera visualizar la lista de reportes pendientes que tengo. 
+    - Yo quisiera poder priorizar los reportes. 
+    - Yo quisiera poder asignar los reportes a un usuario de cuadrilla para su atencion. 
+            Se asigna:
+                - Nombre de quien atiende.
+                - Fecha y hora estimada.  
+                - Prioridad. 
+                - Estatus
+    - Al momento de atender el reporte, yo quisiera poder cerrar el reporte. 
+    - Yo quisiera visualizar los tiempos de respuesta a los reportes.

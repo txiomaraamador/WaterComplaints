@@ -58,4 +58,30 @@
   "Email": "everardoamador@gmail.com",
   "Age": 30
 }
+,{"id": "0e8ebf12-534c-4f19-8b97-383101f5dd50", 
+  "Location": "Sombrerete",
+  "ReportDate": "2023-05-30T00:00:00",
+  "LeakTime": "01:00:00",
+  "ReporterName": "Xiomara Amador",
+  "Description": "Tuberias",
+  "GeoreferencedLocation": "23.444444 43.5555",
+  "Severity": 11,
+  "ReportTime": "10:00:00",
+  "PhoneNumber": "4331131492",
+  "Email": "xiomaralizeth@gmail.com",
+  "Age": 20
+}
+,{"id": "c34b0062-661f-46f5-943f-5353ec918040", 
+  "Location": "Sombrerete",
+  "ReportDate": "2023-05-30T00:00:00",
+  "vanishingtime": "5 dias",
+  "ReporterName": "Evelin Hernandez",
+  "Description": "tuberias",
+  "GeoreferencedLocation": "3.5555 6.77777",
+  "Severity": 10,
+  "ReportTime": "10:00:00",
+  "PhoneNumber": "4331002020",
+  "Email": "evelinhernandez@gmail.com",
+  "Age": 20
+}
 ]

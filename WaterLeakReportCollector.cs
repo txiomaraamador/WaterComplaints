@@ -8,19 +8,19 @@ public class WaterLeakReportCollector
         string location = Console.ReadLine();
 
         Console.WriteLine("Fecha del reporte (en formato dd/mm/yyyy):");
-        string userInput = Console.ReadLine();
-        if (!DateTime.TryParseExact(userInput, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime reportDate))
+        string userInput;
+        DateTime reportDate;
+        do
         {
-            Console.WriteLine("Error con la fecha, favor de verificarla (El formato debe ser dd/mm/aaaa).");
-            return null;
-        }
+            userInput = Console.ReadLine();
+            if (!DateTime.TryParseExact(userInput, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out reportDate))
+            {
+                Console.WriteLine("Error con la fecha, favor de verificarla (El formato debe ser dd/mm/aaaa).");
+            }
+        } while (!DateTime.TryParseExact(userInput, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out reportDate));
 
-        Console.WriteLine("Ingrese el tiempo que tiene la fuga: (en formato hh:mm:ss)");
-        if (!TimeSpan.TryParse(Console.ReadLine(), out TimeSpan leakTime))
-        {
-            Console.WriteLine("Error con el tiempo de la fuga, favor de verificarlo (El formato debe ser hh:mm:ss).");
-            return null;
-        }
+        Console.WriteLine("Ingrese el tiempo que tiene la fuga:");
+        string vanishingtime = Console.ReadLine();
 
         Console.WriteLine("Nombre del reportador:");
         string reporterName = Console.ReadLine();
@@ -32,37 +32,60 @@ public class WaterLeakReportCollector
         string georeferencedLocation = Console.ReadLine();
 
         Console.WriteLine("Gravedad de la fuga (en una escala del 1 al 10):");
-        if (!int.TryParse(Console.ReadLine(), out int severity))
+        string severityInput;
+        int severity;
+        do
         {
-            Console.WriteLine("Error con la gravedad de la fuga, favor de verificarla.");
-            return null;
-        }
+            severityInput = Console.ReadLine();
+            if (!int.TryParse(severityInput, out severity) || severity < 1 || severity > 10)
+            {
+                Console.WriteLine("Error con la gravedad de la fuga, favor de verificarla.");
+            }
+        } while (!int.TryParse(severityInput, out severity) || severity < 1 || severity > 10);
 
         Console.WriteLine("Hora del reporte (en formato hh:mm:ss):");
-        if (!TimeSpan.TryParse(Console.ReadLine(), out TimeSpan reportTime))
+        string reportTimeInput;
+        TimeSpan reportTime;
+        do
         {
-            Console.WriteLine("Error con la hora del reporte, favor de verificarla.");
-            return null;
-        }
+            reportTimeInput = Console.ReadLine();
+            if (!TimeSpan.TryParse(reportTimeInput, out reportTime))
+            {
+                Console.WriteLine("Error con la hora del reporte, favor de verificarla.");
+            }
+        } while (!TimeSpan.TryParse(reportTimeInput, out reportTime));
 
         Console.WriteLine("Número de teléfono de contacto:");
         string phoneNumber = Console.ReadLine();
 
         Console.WriteLine("Correo electrónico de contacto:");
-        string email = Console.ReadLine();
+        string email;
+        do
+        {
+            email = Console.ReadLine();
+            if (!email.Contains("@"))
+            {
+                Console.WriteLine("Error con el correo electrónico, favor de verificarlo.");
+            }
+        } while (!email.Contains("@"));
 
         Console.WriteLine("Edad del reportador:");
-        if (!int.TryParse(Console.ReadLine(), out int age))
+        string ageInput;
+        int age;
+        do
         {
-            Console.WriteLine("Error con la edad del reportador, favor de verificarla.");
-            return null;
-        }
+            ageInput = Console.ReadLine();
+            if (!int.TryParse(ageInput, out age))
+            {
+                Console.WriteLine("Error con la edad del reportador, favor de verificarla.");
+            }
+        } while (!int.TryParse(ageInput, out age));
 
         var WaterLeakReport = new WaterLeakReport
         {
             Location = location,
             ReportDate = reportDate,
-            LeakTime = leakTime,
+            vanishingtime = vanishingtime,
             ReporterName = reporterName,
             Description = description,
             GeoreferencedLocation = georeferencedLocation,
@@ -81,7 +104,7 @@ public class WaterLeakReport
 {
     public string Location { get; set; }
     public DateTime ReportDate { get; set; }
-    public TimeSpan LeakTime { get; set; }
+    public string vanishingtime { get; set; }
     public string ReporterName { get; set; }
     public string Description { get; set; }
     public string GeoreferencedLocation { get; set; }

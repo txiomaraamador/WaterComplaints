@@ -1,28 +1,30 @@
 using System;
 using Newtonsoft.Json;
 using System.IO;
+using System.Collections.Generic;
 
 public class WaterLeakDataProcessor
 {
     public void ProcessData(WaterLeakReport data)
     {
-        string jsonData = JsonConvert.SerializeObject(data, Formatting.Indented);
+        try
+        {
+            string jsonData = JsonConvert.SerializeObject(data, Formatting.Indented);
 
-        // Generar un nuevo ID único para el registro
-        string folio = Guid.NewGuid().ToString();
+            //Console.WriteLine("Datos en formato JSON:");
+            //Console.WriteLine(jsonData);
 
-        // Agregar el ID al objeto JSON
-        jsonData = jsonData.Insert(1, $@"""id"": ""{folio}"", ");
-
-        Console.WriteLine("Datos en formato JSON:");
-        Console.WriteLine(jsonData);
-
-        GuardarJson(jsonData);
+            GuardarJson(jsonData);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error al procesar los datos: " + ex.Message);
+        }
     }
 
     private void GuardarJson(string jsonData)
     {
-         try
+        try
         {
             // Obtener el directorio actual
             string currentDirectory = Directory.GetCurrentDirectory();
@@ -30,34 +32,21 @@ public class WaterLeakDataProcessor
             // Crear un nuevo archivo de texto
             string filePath = Path.Combine(currentDirectory, "datos.json");
 
-            // Leer el archivo existente, si existe
-            string existingData = File.ReadAllText(filePath);
-
-            // Verificar si el archivo ya contiene datos
-            bool hasData = !string.IsNullOrEmpty(existingData);
-
-            // Formatear el registro en formato JSON con corchetes
-            string formattedData;
-
-            if (hasData)
+             // Leer el archivo JSON existente si existe
+            List<WaterLeakReport> existingData = new List<WaterLeakReport>();
+            if (File.Exists(filePath))
             {
-                // Quitar el corchete de cierre del archivo existente
-                existingData = existingData.TrimEnd(']');
-
-                // Agregar una coma si ya hay datos
-                formattedData = "," + jsonData;
-            }
-            else
-            {
-                // No hay datos existentes, agregar corchete de apertura
-                formattedData = "[" + jsonData;
+                string existingJsonData = File.ReadAllText(filePath);
+                existingData = JsonConvert.DeserializeObject<List<WaterLeakReport>>(existingJsonData);
             }
 
-            // Agregar el corchete de cierre al registro formateado
-            formattedData += "\n]";
+            // Agregar los nuevos datos al archivo
+            WaterLeakReport newData = JsonConvert.DeserializeObject<WaterLeakReport>(jsonData);
+            existingData.Add(newData);
 
-            // Guardar el JSON formateado en el archivo
-            File.WriteAllText(filePath, existingData + formattedData + Environment.NewLine);
+            // Serializar y guardar los datos actualizados en el archivo JSON
+            string updatedJsonData = JsonConvert.SerializeObject(existingData, Formatting.Indented);
+            File.WriteAllText(filePath, updatedJsonData);
 
             Console.WriteLine("Los datos se han guardado correctamente en el archivo datos.json.");
         }

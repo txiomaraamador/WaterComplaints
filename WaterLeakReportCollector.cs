@@ -29,7 +29,15 @@ public class WaterLeakReportCollector
         string description = Console.ReadLine();
 
         Console.WriteLine("Localización georeferenciada:");
-        string georeferencedLocation = Console.ReadLine();
+        string georeferencedLocation;
+        do
+        {
+            georeferencedLocation = Console.ReadLine();
+            if (!georeferencedLocation.Contains(","))
+            {
+                Console.WriteLine("Error con la Localización, favor de verificarla.");
+            }
+        } while (!georeferencedLocation.Contains(","));
 
         Console.WriteLine("Gravedad de la fuga (en una escala del 1 al 10):");
         string severityInput;
@@ -43,17 +51,7 @@ public class WaterLeakReportCollector
             }
         } while (!int.TryParse(severityInput, out severity) || severity < 1 || severity > 10);
 
-        Console.WriteLine("Hora del reporte (en formato hh:mm:ss):");
-        string reportTimeInput;
-        TimeSpan reportTime;
-        do
-        {
-            reportTimeInput = Console.ReadLine();
-            if (!TimeSpan.TryParse(reportTimeInput, out reportTime))
-            {
-                Console.WriteLine("Error con la hora del reporte, favor de verificarla.");
-            }
-        } while (!TimeSpan.TryParse(reportTimeInput, out reportTime));
+        DateTime reportTime = DateTime.Now;
 
         Console.WriteLine("Número de teléfono de contacto:");
         string phoneNumber = Console.ReadLine();

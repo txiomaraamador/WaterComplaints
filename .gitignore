@@ -348,3 +348,7 @@ MigraciónBackup /
 
 # Carpeta de trabajo de Ionide (herramientas de F# VS Code multiplataforma)
 .ionuro /
+
+#Otros
+[Bb]in
+[Oo]bj

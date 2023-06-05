@@ -15,7 +15,7 @@ public class WaterLeakReportCollector
             userInput = Console.ReadLine();
             if (!DateTime.TryParseExact(userInput, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out reportDate))
             {
-                Console.WriteLine("Error con la fecha, favor de verificarla (El formato debe ser dd/mm/aaaa).");
+                Console.WriteLine("Error con la fecha, verifique y reintroduzca el dato. (El formato debe ser dd/mm/aaaa).");
             }
         } while (!DateTime.TryParseExact(userInput, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out reportDate));
 
@@ -35,7 +35,7 @@ public class WaterLeakReportCollector
             georeferencedLocation = Console.ReadLine();
             if (!georeferencedLocation.Contains(","))
             {
-                Console.WriteLine("Error con la Localización, favor de verificarla.");
+                Console.WriteLine("Error con la Localización, verifique y reintroduzca el dato.");
             }
         } while (!georeferencedLocation.Contains(","));
 
@@ -47,7 +47,7 @@ public class WaterLeakReportCollector
             severityInput = Console.ReadLine();
             if (!int.TryParse(severityInput, out severity) || severity < 1 || severity > 10)
             {
-                Console.WriteLine("Error con la gravedad de la fuga, favor de verificarla.");
+                Console.WriteLine("Error con la gravedad de la fuga, verifique y reintroduzca el dato.");
             }
         } while (!int.TryParse(severityInput, out severity) || severity < 1 || severity > 10);
 
@@ -63,7 +63,7 @@ public class WaterLeakReportCollector
             email = Console.ReadLine();
             if (!email.Contains("@"))
             {
-                Console.WriteLine("Error con el correo electrónico, favor de verificarlo.");
+                Console.WriteLine("Error con el correo electrónico, verifique y reintroduzca el dato.");
             }
         } while (!email.Contains("@"));
 
@@ -75,7 +75,7 @@ public class WaterLeakReportCollector
             ageInput = Console.ReadLine();
             if (!int.TryParse(ageInput, out age))
             {
-                Console.WriteLine("Error con la edad del reportador, favor de verificarla.");
+                Console.WriteLine("Error con la edad del reportador, verifique y reintroduzca el dato.");
             }
         } while (!int.TryParse(ageInput, out age));
 

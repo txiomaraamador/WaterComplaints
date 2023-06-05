@@ -81,3 +81,5 @@ D:\Users\vladagui2001\Desktop\WaterReport\WaterComplaints\obj\Debug\net7.0\refin
 D:\Users\vladagui2001\Desktop\WaterReport\WaterComplaints\obj\Debug\net7.0\WaterComplaints.pdb
 D:\Users\vladagui2001\Desktop\WaterReport\WaterComplaints\obj\Debug\net7.0\WaterComplaints.genruntimeconfig.cache
 D:\Users\vladagui2001\Desktop\WaterReport\WaterComplaints\obj\Debug\net7.0\ref\WaterComplaints.dll
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Esteban\OneDrive\Documents\code\WaterComplaints\WaterComplaints\obj\Debug\net7.0\WaterComplaints.csproj.CopyComplete

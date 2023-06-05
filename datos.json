@@ -7,7 +7,7 @@
     "Description": "Tub",
     "GeoreferencedLocation": "ccccc",
     "Severity": 9,
-    "ReportTime": "00:00:00",
+    "ReportTime": "2023-06-05T00:00:00",
     "PhoneNumber": "4331112440",
     "Email": "lizeth@gmail.com",
     "Age": 22
@@ -20,7 +20,7 @@
     "Description": "Tuberias",
     "GeoreferencedLocation": "xxxxxx",
     "Severity": 10,
-    "ReportTime": "00:00:00",
+    "ReportTime": "2023-06-05T00:00:00",
     "PhoneNumber": "4331131492",
     "Email": "xiomara@gmail.com",
     "Age": 20
@@ -33,7 +33,7 @@
     "Description": "Tub",
     "GeoreferencedLocation": "ddddddd",
     "Severity": 5,
-    "ReportTime": "00:00:00",
+    "ReportTime": "2023-06-05T00:00:00",
     "PhoneNumber": "4331211123",
     "Email": "osiel@gmail.com",
     "Age": 22
@@ -46,7 +46,7 @@
     "Description": "Manguera rota y el agua no ha parado de tirarse",
     "GeoreferencedLocation": "48.87373649724122, 2.2954639195323967",
     "Severity": 8,
-    "ReportTime": "00:00:00",
+    "ReportTime": "2023-06-05T00:00:00",
     "PhoneNumber": "4331087989",
     "Email": "vlad.aguiluz5c\u001bq@gmail.com",
     "Age": 21
@@ -59,7 +59,7 @@
     "Description": "Tuberias",
     "GeoreferencedLocation": "xxxxxxxxxx",
     "Severity": 8,
-    "ReportTime": "02:16:00",
+    "ReportTime": "2023-06-05T02:16:00",
     "PhoneNumber": "4331131493",
     "Email": "everardoamador@gmail.com",
     "Age": 30
@@ -72,7 +72,7 @@
     "Description": "Tuberias",
     "GeoreferencedLocation": "23.444444 43.5555",
     "Severity": 11,
-    "ReportTime": "10:00:00",
+    "ReportTime": "2023-06-05T10:00:00",
     "PhoneNumber": "4331131492",
     "Email": "xiomaralizeth@gmail.com",
     "Age": 20
@@ -85,7 +85,7 @@
     "Description": "tuberias",
     "GeoreferencedLocation": "3.5555 6.77777",
     "Severity": 10,
-    "ReportTime": "10:00:00",
+    "ReportTime": "2023-06-05T10:00:00",
     "PhoneNumber": "4331002020",
     "Email": "evelinhernandez@gmail.com",
     "Age": 20
@@ -98,7 +98,7 @@
     "Description": "Tuberias",
     "GeoreferencedLocation": "xxxxxxxxxxx",
     "Severity": 6,
-    "ReportTime": "07:39:00",
+    "ReportTime": "2023-06-05T07:39:00",
     "PhoneNumber": "4331001010",
     "Email": "paolagonzalez@gmail.com",
     "Age": 20
@@ -111,9 +111,9 @@
     "Description": "tuberias",
     "GeoreferencedLocation": "xxxxxxxxxxxxx",
     "Severity": 10,
-    "ReportTime": "07:41:00",
+    "ReportTime": "2023-06-05T07:41:00",
     "PhoneNumber": "4331001010",
     "Email": "andresguzman@gmail.com",
     "Age": 21
-  }
+  },
 ]

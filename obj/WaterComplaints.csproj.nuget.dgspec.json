@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj": {}
+    "c:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj": {
+    "c:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj",
+        "projectUniqueName": "c:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj",
         "projectName": "WaterComplaints",
-        "projectPath": "C:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj",
+        "projectPath": "c:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj",
         "packagesPath": "C:\\Users\\Esteban\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\obj\\",
+        "outputPath": "c:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Esteban\\AppData\\Roaming\\NuGet\\NuGet.Config"

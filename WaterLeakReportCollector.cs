@@ -56,30 +56,32 @@ public class WaterLeakReportCollector
 
 
         string phoneNumber;
+        string patternphone = @"^\d{10}$";
         do
         {
             Console.WriteLine("Número de teléfono de contacto (de 10 digitos): ");
             phoneNumber = Console.ReadLine();
 
-            if (!Regex.IsMatch(phoneNumber, @"^\d{10}$"))
+            if (!Regex.IsMatch(phoneNumber, patternphone))
             {
                 Console.WriteLine("El numero de telefono es invalido. Vuelva a ingresarlo: ");
             }
 
-        } while (!Regex.IsMatch(phoneNumber, @"^\d{10}$"));
+        } while (!Regex.IsMatch(phoneNumber, patternphone));
 
 
         string email;
+        string patternemail = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
         do
         {
             Console.WriteLine("Correo electronico de contacto: ");
             email = Console.ReadLine();
 
-            if (!Regex.IsMatch(email, @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"))
+            if (!Regex.IsMatch(email, patternemail))
             {
                 Console.WriteLine("El correo electrónico ingresado es inválido. Vuelva a ingresarlo.");
             }
-        } while (!Regex.IsMatch(email, @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"));
+        } while (!Regex.IsMatch(email, patternemail));
 
 
         Console.WriteLine("Edad del reportador:");

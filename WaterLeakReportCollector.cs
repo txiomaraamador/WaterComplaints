@@ -1,7 +1,9 @@
 using System;
+using System.Text.RegularExpressions;
 
 public class WaterLeakReportCollector
 {
+    private const string FormatoFecha = "dd/MM/yyyy";
     public WaterLeakReport CollectData()
     {
         Console.WriteLine("Localización de la fuga:");
@@ -13,11 +15,11 @@ public class WaterLeakReportCollector
         do
         {
             userInput = Console.ReadLine();
-            if (!DateTime.TryParseExact(userInput, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out reportDate))
+            if (!DateTime.TryParseExact(userInput, FormatoFecha, null, System.Globalization.DateTimeStyles.None, out reportDate))
             {
-                Console.WriteLine("Error con la fecha, verifique y reintroduzca el dato. (El formato debe ser dd/mm/aaaa).");
+                Console.WriteLine("La fecha introducida es inválida. Por favor ingrese un dato válido:");
             }
-        } while (!DateTime.TryParseExact(userInput, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out reportDate));
+        } while (!DateTime.TryParseExact(userInput, FormatoFecha, null, System.Globalization.DateTimeStyles.None, out reportDate));
 
         Console.WriteLine("Ingrese el tiempo que tiene la fuga:");
         string vanishingtime = Console.ReadLine();
@@ -35,7 +37,7 @@ public class WaterLeakReportCollector
             georeferencedLocation = Console.ReadLine();
             if (!georeferencedLocation.Contains(","))
             {
-                Console.WriteLine("Error con la Localización, verifique y reintroduzca el dato.");
+                Console.WriteLine("La localización es inválida, Por favor ingrese un dato válido: ");
             }
         } while (!georeferencedLocation.Contains(","));
 
@@ -47,25 +49,41 @@ public class WaterLeakReportCollector
             severityInput = Console.ReadLine();
             if (!int.TryParse(severityInput, out severity) || severity < 1 || severity > 10)
             {
-                Console.WriteLine("Error con la gravedad de la fuga, verifique y reintroduzca el dato.");
+                Console.WriteLine("Error con la gravedad de la fuga, Por favor ingrese un dato válido: ");
             }
         } while (!int.TryParse(severityInput, out severity) || severity < 1 || severity > 10);
 
         DateTime reportTime = DateTime.Now;
 
-        Console.WriteLine("Número de teléfono de contacto:");
-        string phoneNumber = Console.ReadLine();
 
-        Console.WriteLine("Correo electrónico de contacto:");
-        string email;
+        string phoneNumber;
+        string patternphone = @"^\d{10}$";
         do
         {
-            email = Console.ReadLine();
-            if (!email.Contains("@"))
+            Console.WriteLine("Número de teléfono de contacto (de 10 digitos): ");
+            phoneNumber = Console.ReadLine();
+
+            if (!Regex.IsMatch(phoneNumber, patternphone))
             {
-                Console.WriteLine("Error con el correo electrónico, verifique y reintroduzca el dato.");
+                Console.WriteLine("El numero de telefono es invalido. Por favor ingrese un dato válido: ");
             }
-        } while (!email.Contains("@"));
+
+        } while (!Regex.IsMatch(phoneNumber, patternphone));
+
+
+        string email;
+        string patternemail = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+        do
+        {
+            Console.WriteLine("Correo electronico de contacto: ");
+            email = Console.ReadLine();
+
+            if (!Regex.IsMatch(email, patternemail))
+            {
+                Console.WriteLine("El correo electrónico ingresado es inválido. Por favor ingrese un dato válido:");
+            }
+        } while (!Regex.IsMatch(email, patternemail));
+
 
         Console.WriteLine("Edad del reportador:");
         string ageInput;
@@ -75,7 +93,7 @@ public class WaterLeakReportCollector
             ageInput = Console.ReadLine();
             if (!int.TryParse(ageInput, out age))
             {
-                Console.WriteLine("Error con la edad del reportador, verifique y reintroduzca el dato.");
+                Console.WriteLine("La edad introducida es inválida. Por favor ingrese un dato válido:");
             }
         } while (!int.TryParse(ageInput, out age));
 

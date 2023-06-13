@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WVS7XhV0E4arvHOsrXJWfe4Cyps3TgzCQshsdUcDypBD9x8bbD4grhBzVHR4ALkyX17+3rEikh+Crad9hJw37A==",
+  "dgSpecHash": "xq227w3lTduBeCTM2yyKV6ZWNoE/LjcLALRzj0FiB+FYHxRdkIFuwzWwo8XSkvN0AfYXZShrfx92ONF+2Nu8Sw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj",
+  "projectFilePath": "C:\\Users\\xioma\\OneDrive\\Escritorio\\TALLER\\WaterComplaints\\WaterComplaints.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Esteban\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\xioma\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

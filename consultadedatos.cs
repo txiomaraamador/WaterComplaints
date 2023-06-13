@@ -3,23 +3,20 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 
-class Program
+public class ConsultaDeDatos
 {
-    public class Nombre()
+    public void ConsultarNombre()
     {
         string jsonFilePath = "datos.json";
-        
+
         if (File.Exists(jsonFilePath))
         {
-            string jsonContent = File.ReadAllText(jsonFilePath); 
+            string jsonContent = File.ReadAllText(jsonFilePath);
             List<Datos> listaDatos = JsonConvert.DeserializeObject<List<Datos>>(jsonContent);
-​
             Console.Write("Ingrese el correo: ");
-            string Email = Console.ReadLine();
-​
-            Datos datosEncontrados = listaDatos.Find(d => d.Email== Email);  
-​
-            if (datosEncontrados != null) 
+            string email = Console.ReadLine();
+            Datos datosEncontrados = listaDatos.Find(d => d.Email == email);
+            if (datosEncontrados != null)
             {
                 Console.WriteLine("Datos encontrados:");
                 Console.WriteLine($"Location: {datosEncontrados.Location}");
@@ -32,16 +29,14 @@ class Program
                 Console.WriteLine($"ReportTime: {datosEncontrados.ReportTime}");
                 Console.WriteLine($"PhoneNumber: {datosEncontrados.PhoneNumber}");
                 Console.WriteLine($"Email: {datosEncontrados.Email}");
-                Console.WriteLine($"Age: {datosEncontrados.Age}");                
-
-                
+                Console.WriteLine($"Age: {datosEncontrados.Age}");
             }
-            else 
+            else
             {
                 Console.WriteLine("No se encontraron datos con el folio especificado.");
             }
         }
-        else 
+        else
         {
             Console.WriteLine("El archivo JSON no existe.");
         }

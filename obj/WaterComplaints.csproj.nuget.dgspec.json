@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj": {}
+    "D:\\Users\\Cintia123AB\\code\\WaterComplaints\\WaterComplaints.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj": {
+    "D:\\Users\\Cintia123AB\\code\\WaterComplaints\\WaterComplaints.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj",
+        "projectUniqueName": "D:\\Users\\Cintia123AB\\code\\WaterComplaints\\WaterComplaints.csproj",
         "projectName": "WaterComplaints",
-        "projectPath": "c:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\WaterComplaints.csproj",
-        "packagesPath": "C:\\Users\\Esteban\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Esteban\\OneDrive\\Documents\\code\\WaterComplaints\\WaterComplaints\\obj\\",
+        "projectPath": "D:\\Users\\Cintia123AB\\code\\WaterComplaints\\WaterComplaints.csproj",
+        "packagesPath": "D:\\Users\\Cintia123AB\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Cintia123AB\\code\\WaterComplaints\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Esteban\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "D:\\Users\\Cintia123AB\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

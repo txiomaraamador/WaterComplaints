@@ -5,17 +5,23 @@ using Newtonsoft.Json;
 
 public class ConsultaDeDatos
 {
-    public void ConsultarNombre()
+    public void ConsultarCorreo()
     {
         string jsonFilePath = "datos.json";
+        
 
         if (File.Exists(jsonFilePath))
         {
+            List<WaterLeakReport> existingData = new List<WaterLeakReport>();
             string jsonContent = File.ReadAllText(jsonFilePath);
-            List<Datos> listaDatos = JsonConvert.DeserializeObject<List<Datos>>(jsonContent);
+
+            existingData = JsonConvert.DeserializeObject<List<WaterLeakReport>>(jsonContent);
+
+            //List<Datos> listaDatos = JsonConvert.DeserializeObject<List<Datos>>(jsonContent);
+
             Console.Write("Ingrese el correo: ");
             string email = Console.ReadLine();
-            Datos datosEncontrados = listaDatos.Find(d => d.Email == email);
+            WaterLeakReport datosEncontrados = existingData.Find(d => d.Email == email);
             if (datosEncontrados != null)
             {
                 Console.WriteLine("Datos encontrados:");

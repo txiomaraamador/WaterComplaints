@@ -5,6 +5,7 @@ public class WaterLeakReportCollector
 {
     public WaterLeakReport CollectData()
     {
+
         Console.WriteLine("Localización de la fuga:");
         string location = Console.ReadLine();
 
